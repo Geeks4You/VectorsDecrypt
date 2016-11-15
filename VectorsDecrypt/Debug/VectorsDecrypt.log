@@ -1,8 +1,6 @@
-﻿Build started 11/6/2016 5:18:23 PM.
+﻿Build started 11/14/2016 6:59:31 PM.
      1>Project "Y:\GitHub\VectorsDecrypt\VectorsDecrypt\VectorsDecrypt.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\VectorsDecrypt.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
-         stdafx.cpp
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\VectorsDecrypt.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt VectorsDecrypt.cpp
          VectorsDecrypt.cpp
        Link:
@@ -13,4 +11,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.72
+Time Elapsed 00:00:00.91

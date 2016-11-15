@@ -1,15 +1,16 @@
-// VectorsDecrypting.cpp : Defines the entry point for the console application.
-//
-#include "stdafx.h"
+#include <stdafx.h>
 #include <iostream>
 #include <string>
 #include <vector>
+#include <stdio.h>
+#include <ctype.h>
 
 using namespace std;
 
 int main() {
-	vector<char> normalV(26);
-	vector<char> cipherV(26);
+
+	vector<char> normalV(27);
+	vector<char> cipherV(27);
 	string toDec = "";
 	string beenDec = "";
 
@@ -41,23 +42,43 @@ int main() {
 	normalV.at(23) = 'x'; cipherV.at(23) = '>'; ++i;
 	normalV.at(24) = 'y'; cipherV.at(24) = '/'; ++i;
 	normalV.at(25) = 'z'; cipherV.at(25) = '?'; ++i;
+	normalV.at(26) = ' '; cipherV.at(26) = ' '; ++i;
 
 	// Get secret message
 	do {
 		cout << "Enter a secret message: ";
 		getline(cin, toDec);
+
 	} while (toDec.length() == 0);
 
 	beenDec = toDec;
 
+	int messlength = toDec.length();
+
 	// Decrypt secret message
-	for (int i = 0; i < cipherV.at(0); i++) {
-		if (toDec.at(0) == cipherV.at(0)) {
-			beenDec.at(0) = normalV.at(0);
+
+	int a, code;
+
+	for (a = 0; a < messlength; a++)
+
+	{
+		for (code = 0; code <= 26; code++)
+		{
+
+			if (toDec.at(a) == cipherV.at(code))
+
+			break;
+
 		}
 
-		cout << "Decrypted message: " << beenDec << endl;
+		beenDec.at(a) = normalV.at(code);
 
-		return 0;
 	}
+
+	cout << "Decrypted message: " << beenDec << endl;
+
+	getchar();
+
+	return 0;
+
 }
